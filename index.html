@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>SIGA - Sistema de Gestão Acadêmica</title>
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+      rel="stylesheet"
+    />
+    <link href="/src/styles/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-wrapper cyan lighten-1">
+        <a data-target="slide-out" class="sidenav-trigger">
+          <i class="material-icons">menu</i>
+        </a>
+
+        <a href="/" class="brand-logo">SIGA</a>
+      </div>
+    </nav>
+
+    <ul id="slide-out" class="sidenav">
+      <li>
+        <div class="user-view">
+          <div class="background cyan lighten-1"></div>
+          <a
+            ><i class="material-icons white-text icon-avatar"
+              >account_circle</i
+            ></a
+          >
+          <a><span class="white-text name">User Name</span></a>
+          <a><span class="white-text email">user@email.com</span></a>
+        </div>
+      </li>
+
+      <li>
+        <a href="/listagem/?type=cursos">
+          <img src="/src/assets/icons/cursos.svg" />
+          Cursos
+        </a>
+      </li>
+      <li>
+        <a href="/listagem/?type=disciplinas">
+          <img src="/src/assets/icons/disciplinas.svg" />
+          Disciplinas
+        </a>
+      </li>
+      <li>
+        <a href="/listagem/?type=professores">
+          <img src="/src/assets/icons/professores.svg" />
+          Professores
+        </a>
+      </li>
+      <li>
+        <a href="/listagem/?type=alunos">
+          <img src="/src/assets/icons/alunos.svg" />
+          Alunos
+        </a>
+      </li>
+    </ul>
+
+    <div class="list-of-cards">
+      <div class="card card-image-item">
+        <div class="card-image deep-orange lighten-2">
+          <img src="/src/assets/icons/cursos.svg" />
+          <span class="card-title">Cursos</span>
+        </div>
+
+        <div class="card-content">
+          <p>
+            Cursos tecnólogos, licenciatura, bacharel, pós-graduação,
+            mestrado e doutorado.
+          </p>
+        </div>
+
+        <div class="card-action">
+          <a href="/listagem/?type=cursos" class="cyan-text lighten-1">
+            Ver cursos
+          </a>
+        </div>
+      </div>
+
+      <div class="card card-image-item">
+        <div class="card-image amber lighten-2">
+          <img src="/src/assets/icons/disciplinas.svg" />
+          <span class="card-title">Disciplinas</span>
+        </div>
+
+        <div class="card-content">
+          <p>Veja a lista das disciplinas de todos os cursos.</p>
+        </div>
+
+        <div class="card-action">
+          <a href="/listagem/?type=disciplinas" class="cyan-text lighten-1">
+            Ver disciplinas
+          </a>
+        </div>
+      </div>
+
+      <div class="card card-image-item">
+        <div class="card-image teal lighten-2">
+          <img src="/src/assets/icons/professores.svg" />
+          <span class="card-title">Professores</span>
+        </div>
+
+        <div class="card-content">
+          <p>Veja a lista de professores.</p>
+        </div>
+
+        <div class="card-action">
+          <a href="/listagem/?type=professores" class="cyan-text lighten-1">
+            Ver professores
+          </a>
+        </div>
+      </div>
+
+      <div class="card card-image-item">
+        <div class="card-image light-blue lighten-2">
+          <img src="/src/assets/icons/alunos.svg" />
+          <span class="card-title">Alunos</span>
+        </div>
+
+        <div class="card-content">
+          <p>Veja a lista de alunos.</p>
+        </div>
+
+        <div class="card-action">
+          <a href="/listagem/?type=alunos" class="cyan-text lighten-1">
+            Ver alunos
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="/src/scripts/main.js"></script>
+    <script src="/src/scripts/classes.js" type="module"></script>
+  </body>
+</html>

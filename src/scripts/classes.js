@@ -1,0 +1,12 @@
+import { Aluno } from "./classes/Aluno.js";
+window.Aluno = Aluno;
+import { Curso } from "./classes/Curso.js";
+window.Curso = Curso;
+import { Disciplina } from "./classes/Disciplina.js";
+window.Disciplina = Disciplina;
+import { Pessoa } from "./classes/Pessoa.js";
+window.Pessoa = Pessoa;
+import { PessoaCurso } from "./classes/PessoaCurso.js";
+window.PessoaCurso = PessoaCurso;
+import { Professor } from "./classes/Professor.js";
+window.Professor = Professor;
