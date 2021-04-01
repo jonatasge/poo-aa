@@ -39,13 +39,13 @@ nav {
 
 @media (min-width: 768px) {
   .list-of-cards > * {
-    width: 48%;
+    width: 47.9%;
   }
 }
 
 @media (min-width: 1200px) {
   .list-of-cards > * {
-    width: 23%;
+    width: 23.7%;
   }
 }
 
